@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>레이아웃</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container" style="width: 300px; height: 200px; background-color: gray; position: relative;">
+            <div id="box" style="width: 50px; height: 50px; background-color: black; position: absolute; top: 0; left: 0;"></div>
+        </div>
+        <script>
+            document.addEventListener('keydown', function(event) {
+            const box = document.getElementById('box');
+            const container = document.getElementById('container');
+            const step = 10;
+            let top = parseInt(box.style.top);
+            let left = parseInt(box.style.left);
+
+            switch (event.key) {
+                case 'ArrowUp':
+                if (top - step >= 0) box.style.top = (top - step) + 'px';
+                break;
+                case 'ArrowDown':
+                if (top + step <= container.clientHeight - box.clientHeight) box.style.top = (top + step) + 'px';
+                break;
+                case 'ArrowLeft':
+                if (left - step >= 0) box.style.left = (left - step) + 'px';
+                break;
+                case 'ArrowRight':
+                if (left + step <= container.clientWidth - box.clientWidth) box.style.left = (left + step) + 'px';
+                break;
+            }
+            });
+        </script>
+
+        <h1>Flex</h1>
+        <div style="width: 300px; height: 100px; background-color: blue; color: white; margin-top: 20px;
+        display:flex; flex-direction: column; justify-content: space-between; align-items: center;">
+            <span>login1</span>
+            <span style="margin-top: 30px;">login2</span>
+            <span>login3</span>
+        </div>
+
+        <h1>카카오 로그인 버튼</h1>
+        <style>
+
+            @font-face {
+            font-family: 'Pt';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .kakao-login-btn{
+            font-family: 'Pt';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 40px;
+            outline: none;
+            border: 1px solid #dedede;
+            background-color: #ffea00;
+            font-size: 14px;
+            font-weight: 700;
+            color : #191919;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+            }
+
+            .kakao-login-btn:hover{
+            background-color: #978f00;
+            }
+
+            .kakao-login-btn img{
+            width: 30px;
+            margin-right: 10px;
+            }
+        </style>
+        
+        <a href="https://www.kakao.com" class="kakao-login-btn">
+            <img src="https://www.icak.or.kr/images/kakao_logo2.png" alt="kakao">
+            카카오로 시작하기
+        </a>
+    
+
+    </main>
+</body>
+</html>

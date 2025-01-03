@@ -4,10 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
 </head>
 <body>
     <h1>Hello, Flask!</h1>
     <p>This is an example of using HTML and CSS with Flask.</p>
+    <div style="width: 300px; height: 100px; background-color: lightblue; padding: 10px; margin-top: 10px;">
+        <div style="width: 300px; height: 100px; background-color: lightcoral; padding: 10px; margin-top: 10px;">
+            <div style="width: 300px; height: 100px; background-color: lightgreen; padding: 10px; margin-top: 10px;">
+            </div>
+        </div>
+    </div>
+    <div style="width: 300px; background-color: lightyellow; padding: 10px; margin-top: 10px; margin-left: 50px;
+    padding-left: 20px; box-sizing: border-box; border: 1px solid black; border-radius: 20px;">
+        <div style="width: 50px; height: 60px; background-color: lightcoral;"></div>
+        <div style="width: 120px; height: 30px; background-color: rgb(0, 248, 207);"></div>
+    </div>
+    <div style="width: 300px; height: 200px; color: lightyellow; margin-top: 10px; box-sizing: border-box; border: 1px solid black;">
+        <div style="background-color: rgb(0, 248, 207); color: black; display: block;">div 1</div>
+        <div style="background-color: rgb(0, 248, 207); color: black; display: block;">div 2</div>
+        <span style="background-color: rgb(255, 145, 0); color: black;">span 1</span>
+        <span style="background-color: rgb(255, 145, 0); color: black;">span 2</span>
+    </div>
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <nav></nav>
+    <section></section>
+    <aside></aside>
+    <article></article>
+    
+    <img src="{{ url_for('static', filename='images/flower.jpg') }}" alt="Flower" 
+    style="width: 300px; height: 200px; margin-top: 10px; object-fit: cover; border-radius: 50%;">
+    
+    <input type="text" name="name" id="name" placeholder="Enter your name" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px;">
+    <input type="email" name="email" id="email" placeholder="Enter your email" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px;">
+    <input type="password" name="password" id="password" placeholder="Enter your password" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px;">
+    <input type="date" name="date" id="date" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px;">
+    <input type="submit" value="Submit" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px; background-color: lightcoral; color: white; font-weight: bold;">
+    <input type="button" value="Click Me" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px; background-color: lightgreen; color: white; font-weight: bold;">
+    <input type="reset" value="Reset" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px; background-color: lightblue; color: white; font-weight: bold;">
+    <input type="checkbox" name="checkbox" id="checkbox" style="margin-top: 10px;">
+    <input type="radio" name="radio" id="radio" style="margin-top: 10px;">
+    <span>1</span>
+    <input type="radio" name="radio" id="radio" style="margin-top: 10px;">
+    <span>2</span>
+    <input type="radio" name="radio" id="radio" style="margin-top: 10px;">
+    <span>3</span>
+    <select name="select" id="select" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px;">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
+
+    <table style="width: 300px; margin-top: 10px;">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Column 1</td>
+            <td>Row 3, Column 2</td>
+            <td>Row 3, Column 3</td>
+        </tr>
+    </table>
+    
+    <ul style="width: 300px; margin-top: 10px;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol style="width: 300px; margin-top: 10px;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <a href="https://www.google.com" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px; background-color: lightcoral; color: white; font-weight: bold; text-align: center; text-decoration: none;">Click Me</a>
+    <a href="https://www.naver.com" style="width: 300px; height: 30px; margin-top: 10px; padding: 5px; box-sizing: border-box; border: 1px solid black; border-radius: 10px; background-color: lightgreen; color: white; font-weight: bold; text-align: center; text-decoration: none;">Click Me</a>
+
+    <p style="width: 300px; margin-top: 10px;">This is a paragraph.</p>
+
+    <textarea name="textarea" id="textarea" cols="30" rows="10" 
+    style="width: 300px; margin-top: 10px; padding: 5px; box-sizing: border-box;
+     border: 1px solid black; border-radius: 10px; font-size: large; padding: 5px;">반갑</textarea>
+
 </body>
 </html>
