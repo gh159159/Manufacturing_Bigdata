@@ -1,8 +1,26 @@
 /* styles.css */
+@font-face {
+    font-family: "black";
+    font-style: normal;
+    src: url(./font/NotoSansKR-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "basic";
+    font-style: normal;
+    src: url(./font/NotoSansKR-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Dongle";
+    font-style: normal;
+    src: url(./font/Dongle-Regular.ttf) format("truetype");
+}
 
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Dongle", sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;

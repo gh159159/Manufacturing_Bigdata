@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 디자인 사이트</title>
+	<script src="https://kit.fontawesome.com/9299056aff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="./image/logo-icon.png">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img src="{{ url_for('static', filename='images/logo.png') }}"/>
+			<div>
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/contact" class="menu-item">Contact</a>
+                <a href="/database" class="menu-item">Database</a>
+                <a href="/project" class="menu-item">Project</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="top-container">
+		<img src="{{ url_for('static', filename='images/bg.jpg') }}"/>
+		<div class="div-in-container">
+			<span>
+				<font style="color:#21AAF8">느리더라도</font> 창의적인 개발하기
+			</span>
+			<span style="margin-top:20px;">
+				<font style="color:#21AAF8">스스로</font> 만들어가는 개발하기
+			</span>
+		</div>
+	</div>
+	
+	
+	<div class="section-container">
+		<div class="row">
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://i.ytimg.com/vi/R-V4sw4b4t4/maxresdefault.jpg"/>
+					<span class="title-1">개발자 도구</span>
+					<span class="title-2">기계식 키보드</span>
+					<p>
+						개발자의 하루일과 대부분이 코딩을 해요.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://resources.jetbrains.com/storage/products/code-with-me/img/meta/preview.png"/>
+					<span class="title-1">프로그래밍언어</span>
+					<span class="title-2">자바, 자바스크립트</span>
+					<p>
+						스프링을 하기위해선 기본적으로 자바언어를 알고 있어야 합니다.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://www.startechup.com/wp-content/uploads/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash-1.jpg"/>
+					<span class="title-1">개발열정</span>
+					<span class="title-2">포기하지않기</span>
+					<p>
+						개발자의 하루일과 대부분이 코딩을 해요.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://blog.kakaocdn.net/dn/lbDT6/btq5pD1tzKS/oFYltYzJd4Bnt85HNlDHVK/img.jpg"/>
+					<span class="title-1">웹프론트</span>
+					<span class="title-2">#HTML #CSS #JS</span>
+					<p>
+						개발자의 하루일과 대부분이 코딩을 해요.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://miro.medium.com/max/900/1*o5FmjKTPdJTbhGE2MIjo6w.jpeg"/>
+					<span class="title-1">웹백엔드</span>
+					<span class="title-2">SPRING 프레임워크</span>
+					<p>
+						스프링을 하기위해선 기본적으로 자바언어를 알고 있어야 합니다.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/difference_between_sql_and_mysql.jpg"/>
+					<span class="title-1">데이터베이스</span>
+					<span class="title-2">mySQL</span>
+					<p>
+						개발자의 하루일과 대부분이 코딩을 해요.
+						따라서 키보드가 타이핑 하기 좋아야 해요.
+						보통은 좋은 기계식 키보드를 많이 사용해요.
+					</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="section-container">
+	</div>
+	
+    <div class="section-container footer">
+        <div style="display:flex; justify-content:space-around;">
+            <div class="ft-box">
+                <span class="title">나의 이력</span>
+                <span>대학교졸업</span>
+                <span>개발창업</span>
+                <span>풀스텍개발자근무</span>
+                <span>여러가지 프로젝트 참여</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">기술스택</span>
+                <span>Spring Framework</span>
+                <span>html / css / js</span>
+                <span>Linux 서버</span>
+                <span>mySQL</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">나의 취미</span>
+                <span>카페에서 개발하기</span>
+                <span>주말 축구하기</span>
+                <span>영화보기</span>
+                <span>혼자산책</span>
+            </div>
+        </div>	
+    </div>
+</body>
+</html>

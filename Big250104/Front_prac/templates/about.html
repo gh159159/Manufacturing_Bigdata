@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 디자인 사이트</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/9299056aff.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./image/logo-icon.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="{{ url_for('static', filename='images/logo.png') }}"/>
+            <div>
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/contact" class="menu-item">Contact</a>
+                <a href="/database" class="menu-item">Database</a>
+                <a href="/project" class="menu-item">Project</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h1>About Us</h1>
+        <p>Welcome to our website! We are dedicated to providing the best service possible. Our team is skilled in various areas of web development, including front-end, back-end, and database management.</p>
+        <p>Our mission is to deliver high-quality projects that meet the needs of our clients. We believe in continuous learning and improvement, and we are always looking for new ways to innovate and improve our services.</p>
+        <p>Thank you for visiting our site. If you have any questions or would like to learn more about what we do, please feel free to contact us.</p>
+    </main>
+    <div class="section-container footer mt-5">
+        <div style="display:flex; justify-content:space-around;">
+            <div class="ft-box">
+                <span class="title">나의 이력</span>
+                <span>대학교졸업</span>
+                <span>개발창업</span>
+                <span>풀스텍개발자근무</span>
+                <span>여러가지 프로젝트 참여</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">기술스택</span>
+                <span>Spring Framework</span>
+                <span>html / css / js</span>
+                <span>Linux 서버</span>
+                <span>mySQL</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">나의 취미</span>
+                <span>카페에서 개발하기</span>
+                <span>주말 축구하기</span>
+                <span>영화보기</span>
+                <span>혼자산책</span>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
