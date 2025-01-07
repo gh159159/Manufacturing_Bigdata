@@ -22,7 +22,7 @@ header{
 }
 
 header > div.header{
-	width:1070px;
+	width:1050px;
 	height:100%;
 	background:#fff;
 	margin:0 auto;
@@ -70,6 +70,11 @@ header > div.header img{
 	background:rgba(0,0,0,0.6);
 }
 
+.snap-container {
+	height: 675px;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+}
 
 .div-in-container{
 	display:flex;
@@ -81,7 +86,22 @@ header > div.header img{
 	font-weight:700;
 }
 
+.section-presentation{
+	height: 675px; /* 각 섹션을 화면 크기로 설정 */
+	scroll-snap-align: start; /* 섹션의 시작 부분에서 스냅 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
 
+.section-presentation:nth-child(odd) {
+	background-color: #f4f4f4;
+}
+
+.section-presentation:nth-child(even) {
+	background-color: #ddd;
+}
 
 .section-container{
 	width:100%;
