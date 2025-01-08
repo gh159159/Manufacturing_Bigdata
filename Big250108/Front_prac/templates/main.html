@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" href="../static/images/logo-icon.png">
+    <title>규호의 프론트</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img src="{{ url_for('static', filename='images/logo.png') }}"/>
+			<div>
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/contact" class="menu-item">Contact</a>
+                <a href="/database" class="menu-item">Database</a>
+                <a href="/project" class="menu-item">Project</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="top-container">
+		<img src="{{ url_for('static', filename='images/bg.jpg') }}"/>
+		<div class="div-in-container">
+			<span>
+				<font style="color: rgb(82, 82, 255)">느리더라도</font> 창의적인 개발하기
+			</span>
+			<span style="margin-top:20px;">
+				<font style="color: rgb(82, 82, 255)">스스로</font> 만들어가는 개발하기
+			</span>
+		</div>
+	</div>
+	
+	
+	<div class="section-container">
+		<div class="row">
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://www.semiconductor-digest.com/wp-content/uploads/2024/10/spotfire-wafermaps_defect-1024x576.png"/>
+					<span class="title-1">공정 데이터 분석</span>
+					<span class="title-2">Python, Minitab</span>
+					<p>
+						공정 데이터를 수집하고 분석하여 문제를 진단합니다.
+						Python, Excel 등 도구를 활용해 데이터 시각화를 수행합니다.
+						통계적 분석을 통해 최적화 방안을 도출합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="../static/images/recipe.jpg"/>
+					<span class="title-1">공정 레시피 설계 및 최적화</span>
+					<span class="title-2">DOE(Design of Experiments)</span>
+					<p>
+						공정 레시피를 설계하고 품질을 관리합니다.
+						DOE 기법으로 공정 변수를 실험적으로 최적화합니다.
+						균일한 제품 생산을 위해 레시피를 지속적으로 개선합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://www.researchgate.net/publication/351667467/figure/fig4/AS:11431281207861684@1701358416549/Flow-chart-illustrating-semiconductor-based-manufacturing-composed-of-major-processing.jpg"/>
+					<span class="title-1">문제 해결 및 원인 분석</span>
+					<span class="title-2">가설 설정 및 검증</span>
+					<p>
+						공정 중 발생하는 이슈의 근본 원인을 분석합니다.
+						데이터와 가설 검증을 통해 문제 해결책을 제시합니다.
+						설비 에러 및 불량 문제를 신속히 대응합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://cdn.aitimes.com/news/photo/202212/148262_156597_3512.jpg"/>
+					<span class="title-1">설비 운영 및 유지보수 이해</span>
+					<span class="title-2">반도체 FAB 설비</span>
+					<p>
+						반도체 설비의 동작 원리와 유지보수 방법을 숙지합니다.
+						P&ID 도면과 매뉴얼을 활용해 설비를 점검합니다.
+						설비 성능을 최적화하고 문제 발생 시 대응합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/images/panoramic/GettyImages-1701910108_536812_y8eudx.jpg"/>
+					<span class="title-1">협업 및 커뮤니케이션</span>
+					<span class="title-2">커뮤니케이션 스킬</span>
+					<p>
+						연구개발, 생산팀 등 다양한 부서와 협력합니다.
+						공정 문제 해결을 위해 명확한 보고서와 발표를 진행합니다.
+						팀워크를 바탕으로 목표 달성을 위한 조율을 수행합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+			
+			
+			<div class="col-4" style="padding:14px;">
+				<div class="info-card">
+					<img src="https://img.freepik.com/premium-vector/jeffs-journey-towards-better-wellness-starts-with-focused-mental-health-practices-implementing_216520-161203.jpg"/>
+					<span class="title-1">체력과 멘탈 관리</span>
+					<span class="title-2">시간 관리, 체력 유지 전략</span>
+					<p>
+						어떤 환경에도 적응할 수 있는 체력을 유지합니다.
+						스트레스를 관리하며 안정적인 업무 수행 능력을 갖춥니다.
+						시간 관리를 통해 효율적으로 업무를 처리합니다.
+					</p>
+					<button class="btn">
+						<i class="fas fa-arrow-right"></i>
+						자세히 보기
+					</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+
+<footer>
+	<div class="section-container footer">
+		<div style="display:flex; justify-content:space-around;">
+            <div class="ft-box">
+                <span class="title">나의 이력</span>
+                <span>대학교졸업</span>
+                <span>개발창업</span>
+                <span>풀스텍개발자근무</span>
+                <span>여러가지 프로젝트 참여</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">기술스택</span>
+                <span>Flask Framework</span>
+                <span>html / css / js</span>
+                <span>Linux 서버</span>
+                <span>mySQL</span>
+            </div>
+            
+            <div class="ft-box">
+                <span class="title">나의 취미</span>
+                <span>카페에서 개발하기</span>
+                <span>주말 축구하기</span>
+                <span>영화보기</span>
+                <span>혼자산책</span>
+            </div>
+        </div>
+	</div>
+</footer>
+</html>
