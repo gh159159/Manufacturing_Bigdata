@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list 상세</title>
+	<link rel="icon" href="../static/images/logo-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b9e5c75a3f33fe1379979b411db9511d&libraries=services"></script>
+    <script src="{{ url_for('static', filename='../static/js/basic.js')}}"></script>
+</head>
+
+<body>
+    <header>
+		<div class="header">
+			<img src="{{ url_for('static', filename='images/logo.png') }}"/>
+			<div>
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/contact" class="menu-item">Contact</a>
+                <a href="/database" class="menu-item">Database</a>
+                <a href="/project" class="menu-item">Project</a>
+			</div>
+		</div>
+	</header>
+    <main>
+        <div class="container mt-5">
+            <h2>Machine Learning Prediction Results</h2>
+            <p>Mean Squared Error (MSE): {{ mse }}</p>
+            <p>R-squared (R2): {{ r2 }}</p>
+            <img src="../static/images/diabetes_prediction.png" alt="Prediction Image" class="img-fluid">
+        </div>
+    </main>
+</body>
+</html>
